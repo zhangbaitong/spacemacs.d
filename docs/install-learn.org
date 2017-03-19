@@ -14,6 +14,7 @@
     - $ mv ~/.spacemacs ~/.spacemacs.d/init.el
     - $ git init && git push
 ** 基本配置修改
+#+BEGIN_SRC Emacs Lisp 
     ;;修改镜像
     (setq configuration-layer--elpa-archives
     '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
@@ -30,15 +31,12 @@
     ;;添加样式
     dotspacemacs-themes '(spacemacs-dark
     monokai)
+#+END_SRC
 ** 默认layer
-    better-defaults
-    emacs-lisp
-    git
-    markdown
-    org
-
-
-    
-    
+    - better-defaults
+    - emacs-lisp
+    - git
+    - markdown
+    - org
 ** 链接
    [[https://github.com/syl20bnr/spacemacs][spacemacs官网]]
