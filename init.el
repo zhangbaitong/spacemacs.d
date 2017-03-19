@@ -297,7 +297,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
       ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
-)
+(setq-default dotspacemacs-line-numbers t))
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
@@ -306,6 +306,7 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq powerline-default-separator 'arrow)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
