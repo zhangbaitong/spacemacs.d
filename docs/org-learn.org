@@ -1,0 +1,40 @@
+* 命令汇总[25%]
+** TODO 基本操作命令 :类vim命令:evil通用命令:
+   - 单行首末移动 -> $|^
+   - 文档首末移动 -> gg|G
+   - 视图首末移动 -> H|L ::可视范围不动
+   - 编辑插入 -> o
+   - 展开折叠标题 -> tab(当前) / shift tab(全部)
+   - 标题移动 -> g h|j|k|l
+** TODO 编辑模式命令[2/3] 
+   [-] 添加同级标题 -> m ret
+   [x] 添加表格分割 -> |- tab
+   [x] 添加标签补全 -> m tab
+** TODO 大纲模式命令
+   标题、表格位置层级变化 -> m h|j|k|l
+   TODO状态切换 -> t|T(empty title)
+** 导出
+   导出 -> spc m(ajor mode) e(xport)
+   模板 -> spc m(ajor mode) c(apture)
+** DONE 标签汇总[fn:1]
+   CLOSED: [2017-03-20 Mon 00:46]
+   #+STARTUP: content
+** 示例
+*** 表格
+    | a | b | c | d | e |
+    |---+---+---+---+---|
+    | 1 | 2 | 3 | 4 | 5 |
+    |---+---+---+---+---|
+*** 链接
+    [[http://www.cnblogs.com/Open_Source/archive/2011/07/17/2108747.html][org-mode简明手册]]
+    [[http://orgmode.org/][官方网站]]
+    [[https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bemacs/org][spacemacs-org]]
+
+
+
+[fn:1] 我是注脚1,时间<2017-03-20 Mon>
+
+#+TODO: TODO(t) | DONE(d)
+#+TODO: REPORT(r) BUG(b) KNOWNCAUSE(k) | FIXED(f)
+#+TODO: | CANCELED(c)
+#+TAGS: @tag1 @tag2 @tag3
