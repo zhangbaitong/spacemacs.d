@@ -13,6 +13,9 @@
 ** TODO 大纲模式命令
    - 标题、表格位置层级变化 -> m h|j|k|l
    - TODO状态切换 -> t|T(empty title)
+** org命令
+   - capture模板 -> spc a(pplication) o(rg) c(apture)
+   - capture模板 -> spc m c 
 ** 导出
    - 导出 -> spc m(ajor mode) e(xport)
    - 模板 -> spc m(ajor mode) c(apture)
