@@ -1,4 +1,4 @@
-;;; packages.el --- zhangbaitong layer packages file for Spacemacs.
+;;; packages.el --- zhangbaitong-better-defaults layer packages file for Spacemacs.
 ;;
 ;; Copyright (c) 2012-2016 Sylvain Benner & Contributors
 ;;
@@ -18,20 +18,20 @@
 ;;
 ;;
 ;; Briefly, each package to be installed or configured by this layer should be
-;; added to `zhangbaitong-packages'. Then, for each package PACKAGE:
+;; added to `zhangbaitong-better-defaults-packages'. Then, for each package PACKAGE:
 ;;
 ;; - If PACKAGE is not referenced by any other Spacemacs layer, define a
-;;   function `zhangbaitong/init-PACKAGE' to load and initialize the package.
+;;   function `zhangbaitong-better-defaults/init-PACKAGE' to load and initialize the package.
 
 ;; - Otherwise, PACKAGE is already referenced by another Spacemacs layer, so
-;;   define the functions `zhangbaitong/pre-init-PACKAGE' and/or
-;;   `zhangbaitong/post-init-PACKAGE' to customize the package as it is loaded.
+;;   define the functions `zhangbaitong-better-defaults/pre-init-PACKAGE' and/or
+;;   `zhangbaitong-better-defaults/post-init-PACKAGE' to customize the package as it is loaded.
 
 ;;; Code:
 
-(defconst zhangbaitong-packages
+(defconst zhangbaitong-better-defaults-packages
   '()
-  "The list of Lisp packages required by the zhangbaitong layer.
+  "The list of Lisp packages required by the zhangbaitong-better-defaults layer.
 
 Each entry is either:
 
