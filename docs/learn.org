@@ -1,19 +1,17 @@
 * learn spacemacs
 ** 常见命令
-   编辑配置文件 > spc f(ile) e(macs) d(otfile)
-   选择buffer > spc b(uffer) b(uffer)
-   创建layer > spc spc configuration-layer/create-layer ret
-   打开当前文件所在目录 > spc f(ile) j(ump)
-   最大化当前window > spc w(indow) m(ax)
-   执行当前配置 > spc f e R
-   切换主题 > spc T s
-   NeroTree > spc f|p t
-   bookmark > spc f b
+   - 编辑配置文件 > spc f(ile) e(macs) d(otfile)
+   - 选择buffer > spc b(uffer) b(uffer)
+   - 创建layer > spc spc configuration-layer/create-layer ret
+   - 打开当前文件所在目录 > spc f(ile) j(ump)
+   - 最大化当前window > spc w(indow) m(ax)
+   - 执行当前配置 > spc f e R
+   - 切换主题 > spc T s
+   - NeroTree > spc f|p t
+   - bookmark > spc f b
 ** 常见帮助
-   学习vim键模式 > spc h T
-   查找packages(layer,readme)相关帮助 > spc h spc
-   查找按键 > spc ? (查找连续键定义 > spc\ b)
-   查找内部对象 > spc h d(escirbe) f(unction)|k(key)|m(ode)|v(ariable
+   - 学习vim键模式 > spc h T
+   - 查找packages(layer,readme)相关帮助 > spc h spc
+   - 查找按键 > spc ? (查找连续键定义 > spc\ b)
+   - 查找内部对象 > spc h d(escirbe) f(unction)|k(key)|m(ode)|v(ariable
 ** 准备文档
-
-
