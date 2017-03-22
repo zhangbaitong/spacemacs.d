@@ -61,7 +61,7 @@ values."
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(
                                     ;;org layer excluded
-                                    evil-magit
+                                    ;;;;evil-magit
                                     fill-column-indicator
                                     gitattributes-mode
                                     gitconfig-mode
@@ -71,7 +71,7 @@ values."
                                     git-messenger
                                     ;;;;git-timemachine
                                     helm-gitignore
-                                    magit
+                                    ;;;;magit
                                     magit-gitflow
                                     orgit
                                     smeargle
