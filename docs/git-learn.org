@@ -1,6 +1,6 @@
 * 命令汇总
  - git status > spc g(it) s(tatus)
- - stage > s
+ - stage > s(add)  u(reset)
  - commit > c c
  - push > p u
  
