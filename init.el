@@ -40,7 +40,9 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     git ;;just use timemachine
+     ;;just use magit and timemachine
+     (git :variables
+          git-magit-status-fullscreen t)
      ;; markdown ;; instance of org
      org
      ;; (shell :variables
