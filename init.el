@@ -40,8 +40,8 @@ values."
      ;; auto-completion
      better-defaults
      emacs-lisp
-     git
-     markdown
+     git ;;just use timemachine
+     ;; markdown ;; instance of org
      org
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -69,7 +69,7 @@ values."
                                     git-commit
                                     git-link
                                     git-messenger
-                                    ;;git-timemachine
+                                    ;;;;git-timemachine
                                     helm-gitignore
                                     magit
                                     magit-gitflow
