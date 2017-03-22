@@ -59,7 +59,23 @@ values."
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(
+                                    ;;org layer excluded
+                                    evil-magit
+                                    fill-column-indicator
+                                    gitattributes-mode
+                                    gitconfig-mode
+                                    gitignore-mode
+                                    git-commit
+                                    git-link
+                                    git-messenger
+                                    ;;git-timemachine
+                                    helm-gitignore
+                                    magit
+                                    magit-gitflow
+                                    orgit
+                                    smeargle
+                                    )
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
    ;; `used-only' installs only explicitly used packages and uninstall any
