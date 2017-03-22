@@ -13,6 +13,10 @@
 ** TODO 大纲模式命令
    - 标题、表格位置层级变化 -> m h|j|k|l
    - TODO状态切换 -> t|T(empty title)
+   - 编辑状态下TODO切换 -> shift-方向键
+** 引入片段补全
+   - 代码片段 -> <s tab
+   - 示例片段 -> <e tab
 ** org命令
    - capture模板 -> spc a(pplication) o(rg) c(apture)
    - agenda -> spc m a
