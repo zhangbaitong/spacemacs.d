@@ -12,35 +12,39 @@
 (defconst zhangbaitong-php-packages
   '(
     php-mode
-    ac-php
-    flymake-php
+    company
+    company-php
+    flycheck
     ))
 
 (defun zhangbaitong-php/init-php-mode ()
   (use-package php-mode
     :defer t
     :mode ("\\.php\\'" . php-mode)))
+ 
+(defun zhangbaitong-php/post-init-company ()
+  (condition-case nil
+      (spacemacs|add-company-hook php-mode )
+    (error
+     ;; try this one:
+     (spacemacs|add-company-backends
+      :modes php-mode
+      :variables
+      company-minimum-prefix-length 1000
+      :backends  company-ac-php-backend
+      )
+     )))
 
-(defun zhangbaitong-php/post-init-php-mode()
-  (add-hook 'php-mode-hook
-            '(lambda ()
-               (auto-complete-mode t)
-               (setq ac-sources '(ac-source-php))
-               (yas-global-mode 1)
-               (define-key php-mode-map  (kbd "C-]") 'ac-php-find-symbol-at-point)   ;goto define
-               (define-key php-mode-map  (kbd "C-t") 'ac-php-location-stack-back   ) ;go back
-               )))
-
-
-(defun zhangbaitong-php/init-ac-php ()
-  (use-package ac-php
+(defun zhangbaitong-php/init-company-php()
+  (use-package company-php
     :defer t))
 
-(defun zhangbaitong-php/init-flymake-php ()
-  (use-package flymake-php
-    :defer t))
+(defun zhangbaitong-php/post-init-company-php()
+  (push 'company-ac-php-backend company-backends-php-mode))
 
-(defun zhangbaitong-php/post-init-flymake-php()
-  (add-hook 'php-mode-hook 'flymake-php-load))
+
+(defun zhangbaitong-php/post-init-flycheck ()
+  (spacemacs/add-flycheck-hook 'php-mode))
+
 
 ;;; packages.el ends here
