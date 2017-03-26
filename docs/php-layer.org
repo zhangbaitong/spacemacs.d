@@ -7,12 +7,18 @@
    - 生成ac-php补全
      - ac-php-remake-tags | ac-php-remake-tags-all
    - 代码跳转
-     - 跳转到定义 > SPC m g g
+     - 跳转到定义 > SPC m g g | g d
      - 返回跳转点 > c-t
    - 注释
      - c-x c-;
    - undo redo
      - c-/|?
+** php-mode常见命令
+   - 查看PHP文档
+     - c-c c-f
+   - 运行区域块
+     - c-c c-r
+   - 全文件选中
+     - c-x h
 ** 参考资料
    - [[https://github.com/xcwen/ac-php][ac-php]]
-
