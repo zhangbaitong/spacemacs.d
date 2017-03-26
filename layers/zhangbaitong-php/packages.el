@@ -37,7 +37,8 @@
 
 (defun zhangbaitong-php/init-company-php()
   (use-package company-php
-    :defer t))
+    :defer t)
+  (setq-default company-php-begin-after-member-access (quote ->)))
 
 (defun zhangbaitong-php/post-init-company-php()
   (push 'company-ac-php-backend company-backends-php-mode))
