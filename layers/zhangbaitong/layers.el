@@ -12,6 +12,6 @@
 (configuration-layer/declare-layers '(
                                       zhangbaitong-ui
                                       zhangbaitong-org
-                                      zhangbaitong-better-defaults
                                       zhangbaitong-php
+                                      zhangbaitong-better-defaults
                                       ))
