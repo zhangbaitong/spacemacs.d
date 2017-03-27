@@ -3,6 +3,7 @@
   '(
     company
     (dired-mode :location built-in)
+    impatient-mode
     )
 )
 
@@ -22,4 +23,9 @@
       (add-hook 'dired-mode-hook (lambda ()
                                    (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)))
       )))
+
+(defun zhangbaitong-better-defaults/init-impatient-mode()
+  (use-package impatient-mode
+    :defer t))
+
 ;;; packages.el ends here 
