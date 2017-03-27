@@ -1,0 +1,54 @@
+* Learn Spacemacs
+** Install
+   + $ brew tap d12frosted/emacs-plus
+   + $ brew install emacs-plus
+   + $ brew linkapps emacs-plus
+** 常见命令
+   - 编辑配置文件 > spc f(ile) e(macs) d(otfile)
+   - 选择buffer > spc b(uffer) b(uffer)
+   - 创建layer > spc spc configuration-layer/create-layer ret
+   - 打开当前文件所在目录 > spc f(ile) j(ump)
+   - 执行当前配置 > spc f e R
+   - 切换主题 > spc T s
+   - NeroTree > spc f|p t
+   - bookmark > spc f b
+   - occur-mode > m-s o
+** TODO layout
+
+   - spc l
+** spc h(elp)
+   | 功能点     | spc h d(escribe) ?    |
+   | 函数       | spc h d f             |
+   | 按键       | spc h d k             |
+   | 变量       | spc h d v             |
+   | 模式       | spc h d m             |
+   | spacemacs  | spc h spc             |
+   | evil tutor | spc h T               |
+   | key binds  | spc ?(spc\ b连续按键) |
+
+** spc w(indow)
+   | 功能点   | spc w ? |
+   | 横分屏   | spc w - |
+   | 竖分屏   | spc w / |
+   | 最大化   | spc w m |
+   | undo     | spc w u |
+   | redo     | spc w U |
+   | 选择     | spc num |
+   | 黄金分割 | spc t g |
+   | 中心点   | spc t - |
+
+** spc p(roject)
+   | 功能点     | spc p ? |
+   | 查找文件   | spc p f |
+   | 查找buffer | spc p b |
+   | 切换项目   | spc p p |
+
+** spc g(it)
+   | 功能点 | spc g ? |
+   | 时光机 | spc g t |
+   | 状态   | spc g s |
+   | add    | s       |
+   | reset  | u       |
+   | commit | c c     |
+   | push   | p u     |
+   |        |         |

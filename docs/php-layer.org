@@ -13,6 +13,9 @@
      - c-x c-;
    - undo redo
      - c-/|?
+   - 聚焦函数编辑
+     - 进入 > spc n f
+     - 退出 > spc n w
 ** php-mode常见命令
    - 查看PHP文档
      - c-c c-f
