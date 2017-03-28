@@ -309,15 +309,17 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+;;定义镜像
 (setq configuration-layer--elpa-archives
     '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
       ("org-cn"   . "http://elpa.emacs-china.org/org/")
       ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
+;;fix启动慢
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 ;;关闭编译警告信息
 (setq byte-compile-warnings '(not obsolete))
-(global-hungry-delete-mode t)
+;;显示行号
 (setq-default dotspacemacs-line-numbers t))
 
 (defun dotspacemacs/user-config ()
@@ -328,6 +330,9 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq powerline-default-separator 'arrow)
+  ;;连续删除spc
+  (global-hungry-delete-mode t)
+  (spacemacs/toggle-centered-point-globally-on)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
 
