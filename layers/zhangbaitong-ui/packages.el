@@ -11,7 +11,20 @@
 
 
 (defconst zhangbaitong-ui-packages
-  '()
-)
+  '(
+    tabbar
+    ))
+
+(defun zhangbaitong-ui/init-tabbar()
+  (use-package tabbar
+    :bind (("s-<right>" . tabbar-forward)
+           ("s-<left>" . tabbar-backward)
+           ("s-<down>" . tabbar-forward-group)
+           ("s-<up>" . tabbar-backward-group))
+    :defer t
+    ))
+
+(defun zhangbaitong-ui/post-init-tabbar()
+  (setq tabbar-use-images nil))
 
 ;;; packages.el ends here

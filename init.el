@@ -332,6 +332,8 @@ you should place your code here."
   (setq powerline-default-separator 'arrow)
   ;;连续删除spc
   (global-hungry-delete-mode t)
+  ;;tabbar-mode
+  (tabbar-mode t)
   (spacemacs/toggle-centered-point-globally-on)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
