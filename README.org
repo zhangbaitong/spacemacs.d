@@ -46,12 +46,16 @@
    | push   | p u     |
 
 ** spc j(ump) ?
-| func      | spc j i |
-| char      | spc j j |
-| line      | spc j l |
-| lisp-func | spc j f |
+   | func      | spc j i |
+   | char      | spc j j |
+   | line      | spc j l |
+   | lisp-func | spc j f |
 
 ** spc i(nsert) ?
-| symbols | spc i s |
-| uuid    | spc i U |
+   | symbols | spc i s |
+   | uuid    | spc i U |
+
+** tabar
+   | group | s-up or down    |
+   | tab   | s-left or right |
 
