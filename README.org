@@ -20,6 +20,7 @@
    | spacemacs  | spc h spc             |
    | evil tutor | spc h T               |
    | key binds  | spc ?(spc\ b连续按键) |
+   | search-doc | c-h d                 |
 
 ** spc w(indow) ?
    | 横分屏   | spc w - |
@@ -43,3 +44,14 @@
    | reset  | u       |
    | commit | c c     |
    | push   | p u     |
+
+** spc j(ump) ?
+| func      | spc j i |
+| char      | spc j j |
+| line      | spc j l |
+| lisp-func | spc j f |
+
+** spc i(nsert) ?
+| symbols | spc i s |
+| uuid    | spc i U |
+
