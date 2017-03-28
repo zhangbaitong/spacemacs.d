@@ -315,6 +315,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
       ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+;;关闭编译警告信息
+(setq byte-compile-warnings '(not obsolete))
 (setq-default dotspacemacs-line-numbers t))
 
 (defun dotspacemacs/user-config ()
