@@ -317,6 +317,7 @@ before packages are loaded. If you are unsure, you should try in setting them in
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
 ;;关闭编译警告信息
 (setq byte-compile-warnings '(not obsolete))
+(global-hungry-delete-mode t)
 (setq-default dotspacemacs-line-numbers t))
 
 (defun dotspacemacs/user-config ()
