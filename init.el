@@ -334,6 +334,7 @@ you should place your code here."
   (global-hungry-delete-mode t)
   ;;tabbar-mode
   (tabbar-mode t)
+  (sr-speedbar-open)
   (spacemacs/toggle-centered-point-globally-on)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
