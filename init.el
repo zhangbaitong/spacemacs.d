@@ -40,9 +40,9 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
-     ;;just use magit and timemachine
-     (git :variables
-          git-magit-status-fullscreen t)
+     ;;(git :variables
+     ;;     git-magit-status-fullscreen t)
+     git ;;just use timemachine
      ;; markdown ;; instance of org
      org
      ;; (shell :variables
@@ -63,7 +63,7 @@ values."
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(
                                     ;;org layer excluded
-                                    ;;;;evil-magit
+                                    evil-magit
                                     fill-column-indicator
                                     gitattributes-mode
                                     gitconfig-mode
@@ -73,7 +73,7 @@ values."
                                     git-messenger
                                     ;;;;git-timemachine
                                     helm-gitignore
-                                    ;;;;magit
+                                    magit
                                     magit-gitflow
                                     orgit
                                     smeargle
