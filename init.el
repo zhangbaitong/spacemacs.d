@@ -334,7 +334,8 @@ you should place your code here."
   (global-hungry-delete-mode t)
   ;;tabbar-mode
   (tabbar-mode t)
-  (sr-speedbar-open)
+  ;;看到效果后，没有真正使用就决定屏蔽掉了，其实有jump和imenu已经够了
+  ;;(sr-speedbar-open)
   (spacemacs/toggle-centered-point-globally-on)
   (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )

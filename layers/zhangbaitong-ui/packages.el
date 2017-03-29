@@ -13,7 +13,7 @@
 (defconst zhangbaitong-ui-packages
   '(
     tabbar
-    sr-speedbar
+    ;;sr-speedbar
     ))
 
 (defun zhangbaitong-ui/init-tabbar()
@@ -28,16 +28,16 @@
 (defun zhangbaitong-ui/post-init-tabbar()
   (setq tabbar-use-images nil))
 
-(defun zhangbaitong-ui/init-sr-speedbar()
-  (use-package sr-speedbar
-    :defer t))
+;; (defun zhangbaitong-ui/init-sr-speedbar()
+;;   (use-package sr-speedbar
+;;     :defer t))
 
-(defun zhangbaitong-ui/post-init-sr-speedbar()
-  (setq sr-speedbar-width 10)
-  (setq sr-speedbar-width-x 10)
-  (setq sr-speedbar-max-width 15)
-  (setq sr-speedbar-default-width 10)
-  (setq sr-speedbar-right-side nil)
-  (setq speedbar-use-images nil))
+;; (defun zhangbaitong-ui/post-init-sr-speedbar()
+;;   (setq sr-speedbar-width 10)
+;;   (setq sr-speedbar-width-x 10)
+;;   (setq sr-speedbar-max-width 15)
+;;   (setq sr-speedbar-default-width 10)
+;;   (setq sr-speedbar-right-side nil)
+;;   (setq speedbar-use-images nil))
 
 ;;; packages.el ends here
