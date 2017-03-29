@@ -53,6 +53,7 @@ values."
      ;; version-control
      html
      javascript
+     nginx
      zhangbaitong
      )
    ;; List of additional packages that will be installed without being
