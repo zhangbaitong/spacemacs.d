@@ -22,7 +22,7 @@
    | key binds  | spc ?(spc\ b连续按键) |
    | search-doc | c-h d                 |
 
-** spc w(indow) ?+
+** spc w(indow) ?
    | 横分屏   | spc w - |
    | 竖分屏   | spc w / |
    | 最大化   | spc w m |
@@ -54,6 +54,9 @@
 ** spc i(nsert) ?
    | symbols | spc i s |
    | uuid    | spc i U |
+** spc f(ile) ?
+   | file dir | spc f j |
+   | neotree  | spc f t |
 
 ** tabar
    | group | s-up or down    |
@@ -66,18 +69,22 @@
  
 ** fixed issue
   - Cleanup warning about duplicate layers
-    https://github.com/syl20bnr/spacemacs/pull/7482/commits/092810741f8b836ef536e89b9a1f97fece012300
+   * https://github.com/syl20bnr/spacemacs/pull/7482/commits/092810741f8b836ef536e89b9a1f97fece012300
   - javascript layer with tern binary not found warning
-    https://github.com/syl20bnr/spacemacs/issues/5993
+   * https://github.com/syl20bnr/spacemacs/issues/5993
   - about
 ** usefull website
   - spacemacs config
-   * https://github.com/syl20bnr/spacemacs
-   * https://github.com/zilongshanren/spacemacs-private
+    * https://github.com/syl20bnr/spacemacs
+    * https://github.com/zilongshanren/spacemacs-private
+    * https://github.com/emacs-china/Spacemacs-rocks
   - emacs config
-   * https://github.com/purcell/emacs.d
-   * https://github.com/redguardtoo/emacs.d 
+    * https://github.com/purcell/emacs.d
+    * https://github.com/redguardtoo/emacs.d 
   - packages
-   * https://melpa.org
-  - url
-   * https://github.com/emacs-tw/awesome-emacs
+    * https://melpa.org
+    * https://github.com/emacs-tw/awesome-emacs
+  - elisp
+    * https://learnxinyminutes.com/docs/zh-cn/elisp-cn/
+  - news
+    * https://www.reddit.com/r/emacs/
