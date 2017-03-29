@@ -20,7 +20,8 @@
 (defun zhangbaitong-php/init-php-mode ()
   (use-package php-mode
     :defer t
-    :mode ("\\.php\\'\\|\\.phtml\\'" . php-mode)))
+    :mode ("\\.php\\'" . php-mode)))
+    ;;:mode ("\\.php\\'\\|\\.phtml\\'" . php-mode)))
  
 (defun zhangbaitong-php/post-init-company ()
   (condition-case nil
