@@ -22,7 +22,7 @@
    | key binds  | spc ?(spc\ b连续按键) |
    | search-doc | c-h d                 |
 
-** spc w(indow) ?
+** spc w(indow) ?+
    | 横分屏   | spc w - |
    | 竖分屏   | spc w / |
    | 最大化   | spc w m |
@@ -58,4 +58,26 @@
 ** tabar
    | group | s-up or down    |
    | tab   | s-left or right |
-
+ 
+** intresting
+   | mysql client     | m-x sql-mysql |
+   | edit remote file | tramp mode    |
+   | web browser      | m-x eww       |
+ 
+** fixed issue
+  - Cleanup warning about duplicate layers
+    https://github.com/syl20bnr/spacemacs/pull/7482/commits/092810741f8b836ef536e89b9a1f97fece012300
+  - javascript layer with tern binary not found warning
+    https://github.com/syl20bnr/spacemacs/issues/5993
+  - about
+** usefull website
+  - spacemacs config
+   * https://github.com/syl20bnr/spacemacs
+   * https://github.com/zilongshanren/spacemacs-private
+  - emacs config
+   * https://github.com/purcell/emacs.d
+   * https://github.com/redguardtoo/emacs.d 
+  - packages
+   * https://melpa.org
+  - url
+   * https://github.com/emacs-tw/awesome-emacs
