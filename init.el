@@ -44,7 +44,9 @@ values."
      ;;     git-magit-status-fullscreen t)
      git ;;just use timemachine
      ;; markdown ;; instance of org
-     org
+     (org :variables
+          org-enable-reveal-js-support t
+          org-bullets-bullet-list '("■" "◆" "▲" "▶"))
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -345,7 +347,6 @@ you should place your code here."
   ;;看到效果后，没有真正使用就决定屏蔽掉了，其实有jump和imenu已经够了
   ;;(sr-speedbar-open)
   (spacemacs/toggle-centered-point-globally-on)
-  (setq org-bullets-bullet-list '("■" "◆" "▲" "▶"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
