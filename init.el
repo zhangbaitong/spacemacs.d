@@ -51,6 +51,8 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     html
+     javascript
      zhangbaitong
      )
    ;; List of additional packages that will be installed without being
@@ -62,7 +64,7 @@ values."
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(
-                                    ;;org layer excluded
+                                    ;; org layer excluded
                                     evil-magit
                                     fill-column-indicator
                                     gitattributes-mode
@@ -77,6 +79,8 @@ values."
                                     magit-gitflow
                                     orgit
                                     smeargle
+                                    ;; javascript layer excluded
+                                    tern
                                     )
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
@@ -317,6 +321,9 @@ before packages are loaded. If you are unsure, you should try in setting them in
 ;;fix启动慢
 (setq tramp-ssh-controlmaster-options
       "-o ControlMaster=auto -o ControlPath='tramp.%%C' -o ControlPersist=no")
+;; fix Tern binary not found issue, even if tern is installed by running npm install tern -g
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/lib/node_modules/tern/bin/"))
+(setq exec-path (append exec-path '("/usr/local/lib/node_modules/tern/bin/")))
 ;;关闭编译警告信息
 (setq byte-compile-warnings '(not obsolete))
 ;;显示行号
