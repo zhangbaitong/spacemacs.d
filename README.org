@@ -3,10 +3,8 @@
    - 编辑配置文件 > spc f(ile) e(macs) d(otfile)
    - 选择buffer > spc b(uffer) b(uffer)
    - 创建layer > spc spc configuration-layer/create-layer ret
-   - 打开当前文件所在目录 > spc f(ile) j(ump)
    - 执行当前配置 > spc f e R
    - 切换主题 > spc T s
-   - NeroTree > spc f|p t
    - bookmark > spc f b
    - occur-mode > m-s o
 ** TODO layout
@@ -36,6 +34,7 @@
    | 查找文件   | spc p f |
    | 查找buffer | spc p b |
    | 切换项目   | spc p p |
+   | 项目neotree | spc p t |
 
 ** spc g(it) ?
    | 时光机 | spc g t |
