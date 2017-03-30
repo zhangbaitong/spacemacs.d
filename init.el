@@ -53,6 +53,7 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     lua
      html
      javascript
      nginx
