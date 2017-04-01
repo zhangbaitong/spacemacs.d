@@ -49,6 +49,7 @@ values."
           org-enable-reveal-js-support t
           org-support-shift-select t
           org-bullets-bullet-list '("■" "◆" "▲" "▶"))
+     markdown
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
@@ -74,7 +75,7 @@ values."
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages '(
-                                    ;; org layer excluded
+                                    ;; [git]
                                     evil-magit
                                     fill-column-indicator
                                     gitattributes-mode
@@ -83,13 +84,21 @@ values."
                                     git-commit
                                     git-link
                                     git-messenger
-                                    ;;;;git-timemachine
+                                    ;;git-timemachine
                                     helm-gitignore
                                     magit
                                     magit-gitflow
                                     orgit
                                     smeargle
-                                    ;; javascript layer excluded
+                                    ;; [markdown]
+                                    company-emoji
+                                    emoji-cheat-sheet-plus
+                                    gh-md
+                                    markdown-toc
+                                    mmm-mode
+                                    smartparens
+                                    vmd-mode
+                                    ;; [javascript]
                                     ;;;; tern
                                     coffee-mode
                                     )
