@@ -46,6 +46,7 @@ values."
      ;; markdown ;; instance of org
      (org :variables
           org-enable-reveal-js-support t
+          org-support-shift-select t
           org-bullets-bullet-list '("■" "◆" "▲" "▶"))
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -84,7 +85,8 @@ values."
                                     orgit
                                     smeargle
                                     ;; javascript layer excluded
-                                    ;; tern
+                                    ;;;; tern
+                                    coffee-mode
                                     )
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
