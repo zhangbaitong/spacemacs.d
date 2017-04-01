@@ -37,6 +37,7 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      ;; ivy
+     ;; [basic]
      auto-completion
      better-defaults
      emacs-lisp
@@ -54,10 +55,14 @@ values."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     ;; [languages]
+     clojure
      lua
      html
      javascript
+     ;; [config file]
      nginx
+     ;; [private layer]
      zhangbaitong
      )
    ;; List of additional packages that will be installed without being
