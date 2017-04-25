@@ -26,7 +26,23 @@
     ))
 
 (defun zhangbaitong-ui/post-init-tabbar()
-  (setq tabbar-use-images nil))
+  (setq tabbar-use-images nil)
+  (defun find-git-dir (dir)
+    "Search up the directory tree looking for a .git folder."
+    (cond
+     ((eq major-mode 'dired-mode) "Dired")
+     ((not dir) "process")
+     ((string= dir "/") "no-git")
+     ((file-exists-p (concat dir "/.git")) dir)
+     (t (find-git-dir (directory-file-name (file-name-directory dir))))))
+  (defun git-tabbar-buffer-groups ()
+    "Groups tabs in tabbar-mode by the git repository they are in."
+    (list (find-git-dir (buffer-file-name (current-buffer)))))
+  (setq tabbar-buffer-groups-function 'git-tabbar-buffer-groups)
+  ;; (setq tabbar-buffer-groups-function
+  ;;       (lambda ()
+  ;;         (list "All")))
+  )
 
 ;; (defun zhangbaitong-ui/init-sr-speedbar()
 ;;   (use-package sr-speedbar
