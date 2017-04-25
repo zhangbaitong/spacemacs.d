@@ -18,8 +18,8 @@
 
 (defun zhangbaitong-ui/init-tabbar()
   (use-package tabbar
-    :bind (("s-<right>" . tabbar-forward)
-           ("s-<left>" . tabbar-backward)
+    :bind (("s-<right>" . tabbar-forward-tab)
+           ("s-<left>" . tabbar-backward-tab)
            ("s-<down>" . tabbar-forward-group)
            ("s-<up>" . tabbar-backward-group))
     :defer t
