@@ -61,6 +61,7 @@ values."
      lua
      html
      javascript
+     rust
      ;; [config file]
      nginx
      ;; [private layer]
