@@ -58,6 +58,9 @@
    | file dir | spc f j |
    | neotree  | spc f t |
 
+** spc a(pplication) ?
+   | undo tree | spc a u | 退出q |
+
 ** tabar
    | group | s-up or down    |
    | tab   | s-left or right |
