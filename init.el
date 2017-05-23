@@ -50,6 +50,7 @@ values."
           org-support-shift-select t
           org-bullets-bullet-list '("■" "◆" "▲" "▶"))
      markdown
+     yaml
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
